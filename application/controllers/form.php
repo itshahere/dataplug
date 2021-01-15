@@ -816,7 +816,8 @@ class Form extends CI_Controller {
                 $category_values = array();
                 (isset($changed_filter_form_id[0])) ? $changed_filter_form_id[0] : '';
                 if ($changed_category) {
-                    $category_list = $this->form_results_model->get_category_values('zform_' . $changed_filter_form_id[0], $changed_category);
+                    $category_list = $this->form_results_model->
+					get_category_values('zform_' . $changed_filter_form_id[0], $changed_category);
                     foreach ($category_list as $key => $val) {
                         $category_values[$val[$changed_category]] = $val[$changed_category];
                     }
