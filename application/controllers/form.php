@@ -667,7 +667,8 @@ class Form extends CI_Controller {
 //                            } else {
 //                                $selected = '';
 //                            }
-//                            $filter_options .= "<option $selected value='$val'>$print_val</option>";
+//                            $filter_options .= "<option $selected value=
+//                            '$val'>$print_val</option>";
 //                        }
 //                    }
 //                }
