@@ -582,7 +582,8 @@ class Form extends CI_Controller {
 //            $list_view_settings = get_result_view_settings($slug);
 //            if (isset($list_view_settings->district_filter) && $list_view_settings->district_filter == 1) {
 //
-//                $district_list = $this->form_results_model->get_distinct_district($slug);
+//                $district_list = $this->form_results_model->
+//                get_distinct_district($slug);
 //                $data['district_list'] = $district_list;
 //            }
 //
