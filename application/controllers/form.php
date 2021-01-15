@@ -679,7 +679,8 @@ class Form extends CI_Controller {
 //                            $final = array();
 //                            if (!empty($datum)) {
 //                                foreach ($datum as $inside) {
-//                                    $final = array_merge($final, array($inside => $inside));
+//                                    $final = array_merge($final,
+//                                    array($inside => $inside));
 //                                }
 //                            }
 //                        }
