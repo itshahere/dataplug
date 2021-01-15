@@ -586,7 +586,8 @@ class Form extends CI_Controller {
 //                $data['district_list'] = $district_list;
 //            }
 //
-//            if (isset($list_view_settings->sent_by_filter) && $list_view_settings->sent_by_filter == 1) {
+//            if (isset($list_view_settings->sent_by_filter) &&
+//            $list_view_settings->sent_by_filter == 1) {
 //                $sent_by_list = $this->form_results_model->
 //                get_distinct_sent_by($slug);
 //                $data['sent_by_list'] = $sent_by_list;
