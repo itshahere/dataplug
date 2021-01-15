@@ -876,7 +876,8 @@ class Form extends CI_Controller {
                 $data['selected_form'] = $first_form_id;
                 $data['filter'] = $selected_form['filter'];
                 /** Get filters from  multiple forms * */
-//                $multiple_filters = $this->form_model->get_form_filters($form_single_to_query);
+//                $multiple_filters = $this->form_model->
+//                get_form_filters($form_single_to_query);
 //                $filter_attribute = array();
 //                $form_html_multiple = array();
 //                foreach ($multiple_filters as $key => $value) {
