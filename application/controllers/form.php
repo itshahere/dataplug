@@ -610,7 +610,8 @@ class Form extends CI_Controller {
                     if (array_key_exists("sent_by", $dynamic_filters)) {
                         $imei_no_string = implode(",", $dynamic_filters['sent_by']);
                         //get users name form imei_nos...
-                        $imei_no_list = $this->form_results_model->get_users_name_from_imei_no($imei_no_string);
+                        $imei_no_list = $this->form_results_model->
+						get_users_name_from_imei_no($imei_no_string);
                         $name_arr = array();
                         foreach ($imei_no_list as $key => $val) {
                             $name_arr[$val['imei_no']] = $val['name'];
