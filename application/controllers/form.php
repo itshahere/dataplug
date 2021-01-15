@@ -771,7 +771,10 @@ class Form extends CI_Controller {
                 $login_district = $session_data['login_district'];
                 /* $changed_category = filter attrubte search */
                 $array_final = array();
-                $array_final = $this->get_heading_n_data_posted($form_list_filter, $to_date, $from_date, $cat_filter_value, $changed_category, $town_filter, $posted_filters, $search_text, $district, $sent_by, $export = '', $selected_dc, $selected_uc, $selected_pp, $selected_na, $dynamic_filters);
+                $array_final = $this->get_heading_n_data_posted($form_list_filter,
+				$to_date, $from_date, $cat_filter_value, $changed_category, $town_filter,
+				$posted_filters, $search_text, $district, $sent_by, $export = '',
+				$selected_dc, $selected_uc, $selected_pp, $selected_na, $dynamic_filters);
                 $data['headings'] = $array_final['headings'];
                 $data['form'] = $array_final['form'];
 
