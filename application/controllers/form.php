@@ -747,7 +747,8 @@ class Form extends CI_Controller {
                 $data['app_name'] = $selected_app['name'];
 //                $data['filter'] = $changed_category;
                 /** Get Town based on app id for displaying town filter on list view* */
-//                $town_lists = $this->app_users_model->get_towns($selected_form['app_id']);
+//                $town_lists = $this->app_users_model->
+//                get_towns($selected_form['app_id']);
 //                $town_list_array = array();
 //                foreach ($town_lists as $towns) {
 //                    if (!in_array($towns['town'], $town_list_array)) {
