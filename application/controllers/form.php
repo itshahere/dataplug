@@ -822,7 +822,8 @@ class Form extends CI_Controller {
                     }
                 }
 
-                $data['body_content'] = $this->parser->parse('form/form_results_data', $subdata, TRUE);
+                $data['body_content'] = $this->parser->
+				parse('form/form_results_data', $subdata, TRUE);
                 $data['selected_form'] = $form_id;
                 $data['category_values'] = $category_values;
                 $data['app_id'] = $selected_form['app_id'];
