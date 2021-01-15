@@ -621,7 +621,9 @@ class Form extends CI_Controller {
 
                 //print_r($selected_form);die;
                 if (isset($filter_result->filters)) {
-                    $app_filter_list = isset($filter_result->filters->$form_li[0]) ? (array) $filter_result->filters->$form_li[0] : array();
+                    $app_filter_list = isset($filter_result->filters->
+					$form_li[0]) ? (array) $filter_result->filters->
+					$form_li[0] : array();
                 } else {
                     $app_filter_list = array();
                 }
