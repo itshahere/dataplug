@@ -782,7 +782,11 @@ class Form extends CI_Controller {
                 $this->db->delete('form_result_temp', array('user_id' => $session_data['login_user_id']));
                 $this->db->insert('form_result_temp', array('user_id' => $session_data['login_user_id'], 'query_user' => json_encode($result_sess_array)));
 
-                $total_record_return = $this->form_results_model->return_total_record_posted($form_list_filter, $to_date, $from_date, $cat_filter_value, $filter_attribute_search, $town_filter, $posted_filters, $search_text, $district, $sent_by, $selected_dc, $dynamic_filters);
+                $total_record_return = $this->form_results_model->
+				return_total_record_posted($form_list_filter,
+				$to_date, $from_date, $cat_filter_value, 
+				$filter_attribute_search, $town_filter, $posted_filters,
+				$search_text, $district, $sent_by, $selected_dc, $dynamic_filters);
 
                 $pdata['TotalRec'] = $total_record_return;
                 $pdata['perPage'] = $this->perPage;
