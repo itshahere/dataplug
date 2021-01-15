@@ -763,7 +763,8 @@ class Form extends CI_Controller {
 //                    array_push($filter_attribute, $value['filter']);
 //                    array_push($form_html_multiple, $value['description']);
 //                }
-//                $filter_attribute_search = (!empty($filter_attribute)) ? $filter_attribute : "";
+//                $filter_attribute_search = 
+//                (!empty($filter_attribute)) ? $filter_attribute : "";
 //                $data['filter_attribute'] = $filter_attribute;
 //                $data['form_html'] = $form_html_multiple;
                 $session_data = $this->session->userdata('logged_in');
