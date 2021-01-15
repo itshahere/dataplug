@@ -653,7 +653,8 @@ class Form extends CI_Controller {
 
                 $posted_filters = array();
                 $filter_options = '';
-//                $filter_result = get_result_view_settings($selected_form['app_id']);
+//                $filter_result = 
+//                get_result_view_settings($selected_form['app_id']);
 //                if (isset($filter_result->filters->$form_id)) {
 //                    $app_filter_list = $filter_result->filters->$form_id;
 //
