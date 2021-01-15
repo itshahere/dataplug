@@ -626,7 +626,8 @@ class Form extends CI_Controller {
                     $app_filter_list = array();
                 }
 //                if (!empty($selected_form)) {
-//                    $app_filter_list = explode(',', $selected_form['possible_filters']);
+//                    $app_filter_list = explode(',',
+//                    $selected_form['possible_filters']);
 //                } else {
 //                    $app_filter_list = array('id');
 //                }
