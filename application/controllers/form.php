@@ -900,7 +900,8 @@ class Form extends CI_Controller {
                     'heading' => $array_final['headings'],
                     'form' => $array_final['form']
                 );
-                $this->db->delete('form_result_temp', array('user_id' => $session_data['login_user_id']));
+                $this->db->delete('form_result_temp', array('user_id' =>
+				$session_data['login_user_id']));
                 $this->db->insert('form_result_temp', array('user_id' => 
 				$session_data['login_user_id'], 'query_user' => json_encode($result_sess_array)));
 
