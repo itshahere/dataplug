@@ -756,7 +756,8 @@ class Form extends CI_Controller {
 //                }
 //                $data['town_filter'] = $town_list_array;
                 /** Get filters from  multiple forms * */
-//                $multiple_filters = $this->form_model->get_form_filters($form_list_filter);
+//                $multiple_filters = $this->form_model->
+//                get_form_filters($form_list_filter);
 //                $filter_attribute = array();
 //                $form_html_multiple = array();
 //                foreach ($multiple_filters as $key => $value) {
