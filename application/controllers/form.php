@@ -733,7 +733,9 @@ class Form extends CI_Controller {
 //                $sent_by = $this->input->post('sent_by_list');
 //                $data['selected_sent_by'] = $sent_by;
                 if (strtotime($to_date) > strtotime($from_date)) {
-                    $this->session->set_flashdata('validate', array('message' => 'Invalid Date selection. From Date should be greater than To Date.', 'type' => 'warning'));
+                    $this->session->set_flashdata('validate', array('message' =>
+					'Invalid Date selection. From Date should be greater than To Date.',
+					'type' => 'warning'));
                     redirect(base_url() . 'form/results/' . $form_id);
                 }
                 $data['form_id'] = $form_id;
