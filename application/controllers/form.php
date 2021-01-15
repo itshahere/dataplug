@@ -587,7 +587,8 @@ class Form extends CI_Controller {
 //            }
 //
 //            if (isset($list_view_settings->sent_by_filter) && $list_view_settings->sent_by_filter == 1) {
-//                $sent_by_list = $this->form_results_model->get_distinct_sent_by($slug);
+//                $sent_by_list = $this->form_results_model->
+//                get_distinct_sent_by($slug);
 //                $data['sent_by_list'] = $sent_by_list;
 //            }
 
