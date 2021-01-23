@@ -1627,7 +1627,8 @@ class Form extends CI_Controller {
                     $record_array = array_merge($record_array, array('image' => $imagess));
                 }
 
-                $record_array = array_merge($record_array, array('form_id' => $v['form_id'], 'actions' => $v['id']));
+                $record_array = array_merge($record_array,
+				array('form_id' => $v['form_id'], 'actions' => $v['id']));
                 $record_array = array_merge($record_array,
 				array('created_datetime' => $v['created_datetime'],
 				'actions' => $v['id']));
