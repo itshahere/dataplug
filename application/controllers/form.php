@@ -1479,7 +1479,11 @@ class Form extends CI_Controller {
     }
 
     //new instance
-    public function get_heading_n_data_posted($forms_list, $to_date, $from_date, $category_name, $filter_attribute_search, $town_filter, $posted_filters, $search_text = null, $district, $sent_by, $export = null, $selected_dc, $selected_uc, $selected_pp, $selected_na, $dynamic_filters) {
+    public function get_heading_n_data_posted($forms_list,
+	$to_date, $from_date, $category_name, $filter_attribute_search,
+	$town_filter, $posted_filters, $search_text = null, $district,
+	$sent_by, $export = null, $selected_dc, $selected_uc,
+	$selected_pp, $selected_na, $dynamic_filters) {
         $form_id = $forms_list[0]['form_id'];
         $data['form_id'] = $form_id;
         $selected_form = $this->form_model->get_form($form_id);
