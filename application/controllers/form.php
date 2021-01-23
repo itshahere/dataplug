@@ -1698,7 +1698,8 @@ class Form extends CI_Controller {
         $selected_form = $this->form_model->get_form($form_id);
         $filter_attribute = array();
         if ($selected_form['filter'] != '') {
-            $filter_rec = array_filter(array_map('trim', explode(',', $selected_form['filter'])));
+            $filter_rec = array_filter(array_map('trim',
+			explode(',', $selected_form['filter'])));
             foreach ($filter_rec as $key => $value) {
 
                 array_push($filter_attribute, $value);
