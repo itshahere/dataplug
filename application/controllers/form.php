@@ -1609,7 +1609,8 @@ class Form extends CI_Controller {
                 $this->session->set_flashdata('validate', array('message' => 'No table schema has been built againts this application', 'type' => 'warning'));
                 redirect(base_url() . 'app');
             }
-            $results = $this->form_results_model->get_results_paginated($table_name, $this->perPage, $all_data);
+            $results = $this->form_results_model->
+			get_results_paginated($table_name, $this->perPage, $all_data);
             foreach ($results as $k => $v) {
                 $record_array = array();
                 foreach ($v as $key => $value) {
