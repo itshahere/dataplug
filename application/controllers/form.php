@@ -1949,7 +1949,9 @@ class Form extends CI_Controller {
                 $data_per_filter = array();
                 $posted_filters = array();
                 $app_settings = $this->app_model->get_app_settings($app_id);
-                $app_filter_list = explode(',', (isset($app_settings['map_view_filters'])) ? $app_settings['map_view_filters'] : '');
+                $app_filter_list = explode(',',
+				(isset($app_settings['map_view_filters']))
+				? $app_settings['map_view_filters'] : '');
                 if (!empty($app_settings['map_view_filters'])) {
                     foreach ($app_filter_list as $filters) {
                         $data_per_filter[] = $this->input->post($filters);
