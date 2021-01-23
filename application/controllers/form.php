@@ -1839,7 +1839,8 @@ class Form extends CI_Controller {
         $heading_array = array();
         $record_array_final = array();
         $app_filters_array = array();
-        $results = $this->form_results_model->get_form_results_multiple_all_data($form_lists, $login_district);
+        $results = $this->form_results_model->
+		get_form_results_multiple_all_data($form_lists, $login_district);
         foreach ($results as $k => $v) {
             $record_array = array();
             $result_json = $v['record'];
