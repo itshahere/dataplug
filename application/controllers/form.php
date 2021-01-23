@@ -1712,7 +1712,9 @@ class Form extends CI_Controller {
         $login_district = $session_data['login_district'];
         $heading_array = array();
         $record_array_final = array();
-        $results = $this->form_results_model->get_multiple_form_results_pagination($form_list, $login_district, $this->perPage);
+        $results = $this->form_results_model->
+		get_multiple_form_results_pagination($form_list,
+		$login_district, $this->perPage);
         foreach ($results as $k => $v) {
             $record_array = array();
             $result_json = $v['record'];
