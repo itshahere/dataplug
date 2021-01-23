@@ -1508,7 +1508,8 @@ class Form extends CI_Controller {
             $imagess = array();
             foreach ($results as $k => $v) {
                 $record_array = array();
-                $imagess = $this->form_results_model->getResultsImages($v['id'], $v['form_id']);
+                $imagess = $this->form_results_model->
+				getResultsImages($v['id'], $v['form_id']);
                 if ($imagess) {
                     if (!in_array('image', $table_headers_array)) {
                         $table_headers_array = array_merge($table_headers_array, array('image'));
