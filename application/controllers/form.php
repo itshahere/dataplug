@@ -1540,7 +1540,8 @@ class Form extends CI_Controller {
                 $send[] = $final;
             }
         }
-//        $table_headers_array = array_merge($table_headers_array, array('sent_by'));
+//        $table_headers_array = array_merge($table_headers_array,
+//        array('sent_by'));
         foreach ($heading_query as $key => $value) {
             $header_value = $value['COLUMN_NAME'];
             if ($header_value != 'created_datetime') {
