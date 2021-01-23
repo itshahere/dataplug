@@ -1606,7 +1606,10 @@ class Form extends CI_Controller {
             $table_name = $form_entity['table_name'];
             //$table_exist_bit = $this->form_results_model->check_table_exits($table_name);
             if (!is_table_exist($table_name)) {
-                $this->session->set_flashdata('validate', array('message' => 'No table schema has been built againts this application', 'type' => 'warning'));
+                $this->session->set_flashdata('validate',
+				array('message' =>
+				'No table schema has been built againts this application',
+				'type' => 'warning'));
                 redirect(base_url() . 'app');
             }
             $results = $this->form_results_model->
