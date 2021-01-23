@@ -1552,7 +1552,8 @@ class Form extends CI_Controller {
             }
         }
 
-        $table_headers_array = array_merge($table_headers_array, array('created_datetime'));
+        $table_headers_array = array_merge($table_headers_array,
+		array('created_datetime'));
         $table_headers_array = array_merge($table_headers_array, array('actions'));
         //get heading lables...
         $table_arr = explode("_", $table_name);
