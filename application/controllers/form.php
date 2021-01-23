@@ -1819,7 +1819,8 @@ class Form extends CI_Controller {
      * @return  array An array of form heading and its data
      * @author UbaidUllah Balti <ubaidcskiu@gmail.com>
      */
-    public function get_heading_data_multiple_all_for_posted($form_lists, $app_filter_list) {
+    public function get_heading_data_multiple_all_for_posted($form_lists,
+	$app_filter_list) {
         $form_id = $form_lists[0]['form_id'];
         $data['form_id'] = $form_id;
         $selected_form = $this->form_model->get_form($form_id);
