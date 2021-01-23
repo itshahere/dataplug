@@ -1527,7 +1527,8 @@ class Form extends CI_Controller {
                 $record_array_final[] = $record_array;
             }
             //below parameter 1 for telling function its for reporting...
-            $schema_list = $this->form_results_model->getTableHeadingsFromSchema($table_name, 1);
+            $schema_list = $this->form_results_model->
+			getTableHeadingsFromSchema($table_name, 1);
             $heading_query = array_merge($heading_query, $schema_list);
         }
         $send = array();
