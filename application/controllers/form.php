@@ -1925,7 +1925,10 @@ class Form extends CI_Controller {
         $slug = $slug_id;
         if ($this->session->userdata('logged_in')) {
             if (!$this->acl->hasPermission('form', 'view')) {
-                $this->session->set_flashdata('validate', array('message' => "You don't have enough permissions to do this task.", 'type' => 'warning'));
+                $this->session->set_flashdata('validate',
+				array('message' =>
+				"You don't have enough permissions to do this task.",
+				'type' => 'warning'));
                 redirect(base_url() . 'application-map/' . $slug);
             }
             /** multiple form handling system statrs * */
