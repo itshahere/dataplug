@@ -1905,7 +1905,8 @@ class Form extends CI_Controller {
             $final_filter_sorted[$key_sorter] = $app_filters_array[$key_sorter];
         }
         $data['app_filters_array'] = $final_filter_sorted;
-        $heading_array = array_merge($heading_array, array('created_datetime', 'actions'));
+        $heading_array = array_merge($heading_array,
+		array('created_datetime', 'actions'));
         $data['headings'] = $heading_array;
         $data['form'] = $record_array_final;
         $data['active_tab'] = 'app';
