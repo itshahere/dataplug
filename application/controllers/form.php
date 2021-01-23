@@ -1523,7 +1523,8 @@ class Form extends CI_Controller {
                     }
                 }
                 $record_array = array_merge($record_array, array('form_id' => $v['form_id']));
-                $record_array = array_merge($record_array, array('created_datetime' => $v['created_datetime'], 'actions' => $v['id']));
+                $record_array = array_merge($record_array,
+				array('created_datetime' => $v['created_datetime'], 'actions' => $v['id']));
                 $record_array_final[] = $record_array;
             }
             //below parameter 1 for telling function its for reporting...
