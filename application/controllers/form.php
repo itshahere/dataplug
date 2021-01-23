@@ -1804,7 +1804,8 @@ class Form extends CI_Controller {
             $record_array_final[] = $record_array;
         }
 
-        $heading_array = array_merge($heading_array, array('created_datetime', 'actions'));
+        $heading_array = array_merge($heading_array,
+		array('created_datetime', 'actions'));
         $data['headings'] = $heading_array;
         $data['form'] = $record_array_final;
         $data['active_tab'] = 'app';
