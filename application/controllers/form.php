@@ -1742,7 +1742,8 @@ class Form extends CI_Controller {
     }
 
     /**
-     * method to get heading data of multiple form for all data based on filter array
+     * method to get heading data of multiple
+	 form for all data based on filter array
      * @param  $form_list list of form in a single applicatoin
      * @param  $app_filter_list array of all filter set on which search is based
      * @return  array An array of form heading and its data
