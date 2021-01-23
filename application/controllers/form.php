@@ -1618,7 +1618,8 @@ class Form extends CI_Controller {
                     }
                 }
 
-                $imagess = $this->form_results_model->getResultsImages($v['id'], $form_entity['form_id']);
+                $imagess = $this->form_results_model->
+				getResultsImages($v['id'], $form_entity['form_id']);
                 if ($imagess) {
                     $image_ex = true;
                     if (!in_array('image', $table_headers_array)) {
