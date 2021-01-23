@@ -1498,7 +1498,11 @@ class Form extends CI_Controller {
         $record_array_final = array();
         $heading_query = array();
         $category_name = $value = str_replace('_', '/', $category_name);
-//        $exclude_array = array('id', 'remote_id', 'district_name', 'uc_name', 'town_name', 'location', 'form_id', 'img1', 'img2', 'img3', 'img4', 'img5', 'img1_title', 'img2_title', 'img3_title', 'img4_title', 'img5_title', 'is_deleted', 'version_name', 'location_source', 'time_source', 'post_status');
+//        $exclude_array = array('id', 'remote_id', 'district_name',
+// 'uc_name', 'town_name', 'location', 'form_id', 'img1', 'img2',
+// 'img3', 'img4', 'img5', 'img1_title', 'img2_title', 'img3_title',
+// 'img4_title', 'img5_title', 'is_deleted', 'version_name',
+// 'location_source', 'time_source', 'post_status');
         $exclude_array = array('id', 'remote_id', 'form_id', 'is_deleted');
         foreach ($forms_list as $form_entity) {
             $table_name = $form_entity['table_name'];
