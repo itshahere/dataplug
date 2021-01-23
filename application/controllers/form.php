@@ -1636,7 +1636,8 @@ class Form extends CI_Controller {
             $heading_query = array_merge($heading_query, $schema_list);
         }
 
-//        $table_headers_array = array_merge($table_headers_array, array('sent_by'));
+//        $table_headers_array = array_merge($table_headers_array,
+//        array('sent_by'));
 
         foreach ($heading_query as $key => $value) {
             $header_value = $value['COLUMN_NAME'];
