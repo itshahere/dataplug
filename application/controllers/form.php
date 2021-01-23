@@ -1503,7 +1503,10 @@ class Form extends CI_Controller {
         foreach ($forms_list as $form_entity) {
             $table_name = $form_entity['table_name'];
             $results = $this->form_results_model->get_result_paginated_posted($table_name, $to_date, $from_date, $category_name, $filter_attribute_search, $town_filter, $posted_filters, $search_text, $district, $sent_by, $this->perPage, $selected_dc, $selected_uc, $selected_pp, $selected_na, $dynamic_filters);
-//            $results = $this->form_results_model->get_form_results_category($forms_list, $to_date, $from_date, $category_name, $filter_attribute_search, $town_filter, $posted_filters, $search_text, $login_district, $this->perPage);
+//            $results = $this->form_results_model->
+//get_form_results_category($forms_list, $to_date, $from_date,
+// $category_name, $filter_attribute_search, $town_filter,
+// $posted_filters, $search_text, $login_district, $this->perPage);
 //           dump($results);
             $imagess = array();
             foreach ($results as $k => $v) {
